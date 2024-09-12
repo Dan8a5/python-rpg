@@ -1,10 +1,10 @@
-# character class definition
+# character class definition 
 class Character:
     def __init__(self, health, power): # constructor method
         self.health = health # health assigs the health value to the character
         self.power = power # assisgns the power value, representing how much damage a character can deal 
 
-    def alive(self): # checks if the character  is alive by looking at their health, if health is greater than ) it returns true; otherwise false
+    def alive(self): # checks if the character  is alive by looking at their health, if health is greater than 0 it returns true; otherwise false
         return self.health > 0
 
     def attack(self, enemy): # attack method, allows one character to attack the other
@@ -19,11 +19,11 @@ class Character:
 
 class Hero(Character): #This defines a specific type of Character called Hero. It inherits from the Character class using class Hero(Character).
     def __init__(self):  #The __init__ method calls super().__init__(...), which invokes the constructor of the parent Character class, giving the hero 10 health and 5 power.
-        super().__init__(health=10, power=5)
+        super().__init__(health=20, power=10)
 
 class Goblin(Character): #Similar to Hero, the Goblin class inherits from Character.
     def __init__(self):
-        super().__init__(health=6, power=2)#A goblin has 6 health and 2 power, set by calling super().__init__.
+        super().__init__(health=18, power=5)#A goblin has 6 health and 2 power, set by calling super().__init__.
 
 def main(): #The main function is where the game starts.
     hero = Hero() #It creates two objects: hero and goblin, each with their predefined health and power.
