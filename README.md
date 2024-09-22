@@ -5,3 +5,4 @@ Take the starter code of the RPG game and rewrite it using objects. It's current
 You're task is to refactor it and use objects/classes.
 
 Then build your own RPG style game (Blackjack)
+# magic-8-ball
